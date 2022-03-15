@@ -1,10 +1,13 @@
 document.addEventListener('DOMContentLoaded', function loaded() {
+    let textarea = document.getElementById('keylogger');
 
-    let test = window.addEventListener('keydown', function (){
-        var ok = hey.key;
-        console.log(ok);
+    let test = window.addEventListener('keydown', function (event){
+
+        if(event)
+        {
+            let key = event.key;
+            textarea.innerHTML = key; 
+        }
     })
 
-    let textarea = document.getElementById('keylogger');
-    console.log(textarea);
 })
