@@ -1,0 +1,7 @@
+{
+    "villes":[
+      {"name": "La Plateforme_", "address": "8 rue d'hozier", "city": "Marseille", "nb_staff": "11", "creation":"2019"},
+      {"name": "Test", "address": "5 rue test", "city": "TestCity", "nb_staff": "3", "creation":"2089"},
+      {"name": "Ok", "address": "5 hello world", "city": "OkCity", "nb_staff": "3", "creation":"2000"}
+    ]
+}
