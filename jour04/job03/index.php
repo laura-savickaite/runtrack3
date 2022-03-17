@@ -12,7 +12,6 @@
     <input type='text' id='id'>
     <input type='text' id='name'>
     <select name="select" id="select">
-        <option value=""></option>
     </select>
     <button id='filter'>Filter</button>
     

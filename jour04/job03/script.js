@@ -16,10 +16,7 @@ document.addEventListener('DOMContentLoaded', function loaded() {
 
     let idValue = document.getElementById('id').value;
     let nameValue = document.getElementById('name').value;
-
-    console.log(idValue);
-    console.log(nameValue);   
-
+    
         fetch('pokemon.json')
         .then((response) => response.json())
         .then((response) => {
@@ -39,9 +36,11 @@ document.addEventListener('DOMContentLoaded', function loaded() {
             const uniqPokemonType = new Set(pokemonType);
             console.log(uniqPokemonType)
 
-            options = uniqPokemonType.forEach((pokeType) => {
+            uniqPokemonType.forEach((pokeType) => {
                 console.log(pokeType)
-                filter.querySelector('option').innerHTML = pokeType
+                const option = document.createElement("option");
+                option.innerHTML = pokeType
+                filter.appendChild(option);
             });
             
         })
