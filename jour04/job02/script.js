@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function loaded() {
         // console.log(test);
 
         let ok = test[key]
+        console.log(ok)
     }
 
     jsonValueKey('{"name": "La Plateforme_", "address": "8 rue dhozier", "city": "Marseille", "nb_staff": 11, "creation": 2019 }', 'name');
