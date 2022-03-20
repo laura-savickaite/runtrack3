@@ -9,7 +9,6 @@
     <title>inscription</title>
 </head>
 <body>
-    <form action="" method="post">
         <label for="name">Prénom :</label>
             <input type="text" id="prenom" name="prenom">
             <p class="error"></p>
@@ -24,13 +23,13 @@
 
         <label for="msg">Mot de passe :</label>
             <input type="password" id="pass" name="password" required>
+            <p>Le mot de passe doit avoir au moins 8 caractères, au moins une minuscule, une majuscule, un nombre et un caractère spécial.</p>
             <p class="error"></p>
 
         <label for="msg">Confirmation du mot de passe :</label>
             <input type="password" id="pass2" name="password2" required>
             <p class="error"></p>
 
-        <button class="#" type="submit" name="inscription">Sign in</button>
-    </form>
+        <button id='submit' name="inscription">Sign in</button>
 </body>
 </html>
